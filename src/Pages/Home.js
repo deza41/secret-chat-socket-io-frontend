@@ -9,7 +9,7 @@ import {uniqueNamesGenerator,colors,animals } from "unique-names-generator"
 import '../home.css'
 import ReactScrollableFeed from 'react-scrollable-feed';
 
-const socket = io('https://socket-io-chat-secret.herokuapp.com/');
+const socket = io('https://ancient-retreat-05963.herokuapp.com/');
 
 const Home = () => {
 
