@@ -24,5 +24,5 @@ socket.io
 ```
 ##
 
-BACKEND CODE:  https://github.com/deza41/secret-chat-socket-io-backend
+BACKEND CODE:  https://github.com/deza41/secret-chat-socket-io-backend \
 Live Site: https://secretchat-socket-io.netlify.app/
