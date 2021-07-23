@@ -13,11 +13,10 @@ Socket.io
 ```
 ##
 
-## Frpmtemd technologies:
+## Frontend technologies:
 ```
-Node.js
-Express.js
-Socket.io
+React.js
+socket.io
 ```
 ##
 
