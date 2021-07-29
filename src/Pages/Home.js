@@ -77,15 +77,15 @@ const Home = () => {
     useEffect(()=>{
         socket.on('get-chat', (chat)=>{
 
-            // chat.rows.map((message) => {
-            //     addResponseMessage(message.msg_log)
-            //     setRec({text:message.msg_log, user: "external"})
+            chat.rows.map((message) => {
+                addResponseMessage(message.msg_log);
+                // setRec({text:message.msg_log, user: "external"})
     
-            //     var objDiv = document.getElementById("bottom");
-            //     objDiv.scrollTop = objDiv.scrollHeight;
+                // var objDiv = document.getElementById("bottom");
+                // objDiv.scrollTop = objDiv.scrollHeight;
     
     
-            // })
+            })
 
             console.log(chat)
             console.log('test')
