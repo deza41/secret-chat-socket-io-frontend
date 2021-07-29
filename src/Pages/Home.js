@@ -10,6 +10,7 @@ import '../home.css'
 import ReactScrollableFeed from 'react-scrollable-feed';
 
 const socket = io('https://ancient-retreat-05963.herokuapp.com/');
+// const socket = io('http://localhost:8000/');
 
 const Home = () => {
 
@@ -33,6 +34,19 @@ const Home = () => {
             // console.log(users)
             numUsersSet(users);
         });
+
+        socket.emit('last-chat', "getting chat");
+
+        socket.on('get-chat', (chat)=>{
+            // console.log(users)
+            console.log(chat)
+        });
+
+        // socket.on('last-chat', async(chat)=>{
+        //     // console.log(users)
+        //     console.log(await chat)
+        // });
+
 
         // socket.emit('get-users-init', );
 
