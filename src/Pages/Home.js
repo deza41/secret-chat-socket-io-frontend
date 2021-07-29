@@ -39,14 +39,19 @@ const Home = () => {
 
         socket.on('get-chat', (chat)=>{
             // console.log(users)
+
+            addResponseMessage(chat.row[0].msg_log);
+            //rec must be to store the message as the [] < dependancy requires the dependancy to not change size e.g. ...chat
+            //this is then passed into another use affect with the dependancy[rec] to ensure that it will only run when rec changes thus allowing us to change chat without callback stacks
+
+            // setRec({text:message, user: "external"})
+            // setchat([message]);
+
+            // var objDiv = document.getElementById("bottom");
+            // objDiv.scrollTop = objDiv.scrollHeight;
+
             console.log(chat)
         });
-
-        // socket.on('last-chat', async(chat)=>{
-        //     // console.log(users)
-        //     console.log(await chat)
-        // });
-
 
         // socket.emit('get-users-init', );
 
