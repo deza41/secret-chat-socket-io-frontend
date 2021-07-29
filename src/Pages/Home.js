@@ -12,6 +12,7 @@ import ReactScrollableFeed from 'react-scrollable-feed';
 const socket = io('https://ancient-retreat-05963.herokuapp.com/');
 // const socket = io('http://localhost:8000/');
 
+
 const Home = () => {
 
     const [messages, setMessages] = useState('')
@@ -69,6 +70,8 @@ const Home = () => {
     },[]);
 
 
+
+
     useEffect(()=>{
         setchat([...chat,rec]);
         // eslint-disable-next-line 
@@ -84,7 +87,7 @@ const Home = () => {
                 // var objDiv = document.getElementById("bottom");
                 // objDiv.scrollTop = objDiv.scrollHeight;
     
-    
+                return '';
             })
 
             console.log(chat)
