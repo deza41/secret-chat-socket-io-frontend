@@ -48,20 +48,7 @@ const Home = () => {
 
         // })
 
-        socket.on('get-chat', (chat)=>{
-
-            // chat.rows.map((message) => {
-            //     addResponseMessage(message.msg_log)
-            //     setRec({text:message.msg_log, user: "external"})
     
-            //     var objDiv = document.getElementById("bottom");
-            //     objDiv.scrollTop = objDiv.scrollHeight;
-    
-    
-            // })
-
-            console.log(chat)
-        });
 
         // socket.emit('get-users-init', );
 
@@ -86,6 +73,24 @@ const Home = () => {
         setchat([...chat,rec]);
         // eslint-disable-next-line 
     },[rec]);
+
+    useEffect(()=>{
+        socket.on('get-chat', (chat)=>{
+
+            // chat.rows.map((message) => {
+            //     addResponseMessage(message.msg_log)
+            //     setRec({text:message.msg_log, user: "external"})
+    
+            //     var objDiv = document.getElementById("bottom");
+            //     objDiv.scrollTop = objDiv.scrollHeight;
+    
+    
+            // })
+
+            console.log(chat)
+            console.log('test')
+        });
+    },[]);
 
 
 
