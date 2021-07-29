@@ -82,16 +82,15 @@ const Home = () => {
 
             chat.rows.map((message) => {
                 addResponseMessage(message.msg_log);
-                // setRec({text:message.msg_log, user: "external"})
-    
-                // var objDiv = document.getElementById("bottom");
-                // objDiv.scrollTop = objDiv.scrollHeight;
+                setRec({text:message.msg_log, user: "external"})
+                var objDiv = document.getElementById("bottom");
+                objDiv.scrollTop = objDiv.scrollHeight;
     
                 return '';
             })
 
-            console.log(chat)
-            console.log('test')
+            // console.log(chat)
+            // console.log('test')
         });
     },[]);
 
