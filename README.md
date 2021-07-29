@@ -14,6 +14,7 @@ There is a main chat and widget chat that are all integrated together so you sen
 Node.js
 Express.js
 Socket.io
+postgresql - heroku
 ```
 ##
 
